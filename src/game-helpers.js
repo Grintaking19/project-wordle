@@ -53,3 +53,12 @@ export function checkGuess(guess, answer) {
 
   return result;
 }
+
+// Returns true if all letters in the guessResult are 'correct'
+export function isWinningGuess(guessResult) {
+  if (!guessResult) {
+    return false;
+  }
+  return guessResult.every((item) => item.status === 'correct');
+}
+

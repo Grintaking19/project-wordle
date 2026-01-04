@@ -219,6 +219,25 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+
+.winning-banner{
+  background: var(--color-success);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.lossing-banner{
+  background: var(--color-error);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 /*
   Keyframe animations
 */
