@@ -9,6 +9,7 @@ function GuessInput({
   answer,
   isWinning,
   setIsWinning,
+  resetGame,
 }) {
   // function evaluteGuesses(answer, guess, currentGuess) {
   //   let output = [];
@@ -39,6 +40,7 @@ function GuessInput({
       }}
     >
       <label htmlFor="guess-input">Enter your guess:</label>
+    <div className="input-reset-wrapper">
       <input
         id="guess-input"
         type="text"
@@ -48,6 +50,12 @@ function GuessInput({
         autoComplete="off"
         disabled={isWinning || currentGuess >= NUM_OF_GUESSES_ALLOWED}
       />
+      {(isWinning || currentGuess >= NUM_OF_GUESSES_ALLOWED) && <button className="reset-button" onClick={() =>{
+      resetGame();
+    } }>
+      <img src='https://img.icons8.com/?size=100&id=61117&format=png&color=000000' alt='Reset Game'/>
+    </button>}
+    </div>
     </form>
   );
 }

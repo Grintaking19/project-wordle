@@ -130,7 +130,21 @@ h1 {
   gap: 8px;
   margin-top: 16px;
 }
+.input-reset-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: row;
+}
+.reset-button  img{
+  width: 48px;
+  height: 48px;
 
+  filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(90%) contrast(85%);
+  border: solid 2px var(--color-gray-700);
+  border-radius: 4px;
+}
 /*
   Round the corners for the 4 cells at the very corners of
   the game board
