@@ -15,14 +15,14 @@ function KeyboardBanner({ guess, currentGuess }) {
         }
       }
   }}
-  
+
   return (
-    <div className="guess-results">
+    <div className="keyboard-wrapper">
       {KEYS.map((row) => (
         <p className="guess" key={crypto.randomUUID()}>
           {row.map((key) => (
             <span
-              className={`cell ${
+              className={`cell-keyboard ${
                 getKeyStatus(key)
               }`}
               key={crypto.randomUUID()}
